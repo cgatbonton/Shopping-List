@@ -1,0 +1,54 @@
+body {
+  min-height: 100vh;
+  place-items: start center;
+  display: grid;
+}
+
+.shopping {
+  grid-template-columns: 1fr auto;
+  display: grid;
+}
+
+.shopping-list {
+  width: 500px;
+  background: #fff;
+  border-radius: 1rem;
+  margin: 4rem 0;
+  padding: 3rem;
+}
+
+.shopping-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shopping-item {
+  grid-gap: 1rem;
+  border-bottom: 1px solid var(--gray);
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1rem 0;
+  display: grid;
+}
+
+.shopping-item input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.shopping-item input[type="checkbox"]:checked + .itemName {
+  opacity: .5;
+}
+
+.shopping-item button {
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  transition: transform .2s;
+}
+
+.shopping-item button:hover {
+  transform: scale(1.4);
+}
+
+/*# sourceMappingURL=index.4db123bb.css.map */
